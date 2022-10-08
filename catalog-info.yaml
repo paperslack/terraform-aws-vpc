@@ -1,0 +1,28 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: terraform-aws-vpc
+  description: The place to be, for great artists 
+  labels:
+    sailfast/provider: AWS
+    sailfast/role: networking
+    sailfast/group: core-infrastructure
+    sailfast/subgroup: vpc
+  annotations:
+    sailfast/service-discovery: artistweb
+    circleci.com/project-slug: github/sailfast/terraform-aws-vpc
+    backstage.io/techdocs-ref: dir.  
+  tags:
+    - core-infrastructure
+    - vpc
+    - networking
+  links:
+    - url: https://admin.example-org.com
+      title: Admin Dashboard
+      icon: dashboard
+      type: admin-dashboard
+spec:
+  type: infrastructure
+  lifecycle: production
+  owner: pedro del gallego
+  system: core infrastructure
